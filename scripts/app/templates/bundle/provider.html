@@ -1,0 +1,15 @@
+<div class="provider slogan" id="provider">
+  <h2 ng-class="provider.tilt" >{{ provider.info.name }}</h2>
+</div>
+
+<div class="provider info" id="provider-info">
+  <div class="left">
+    <img ng-src="{{provider.info.providerLogoUrl}}" />
+  </div>
+  <div class="right">
+    <div class="downloads copy"><q>{{provider.info.downloadLimitDisplay}} Wifi</q></div>
+    <div class="speed copy"><q>Up to {{provider.info.downloadSpeedDisplay}}</q></div>
+    <div class="calls copy"><q>{{provider.info.callsDisplay}}</q></div>
+    <div class="contract copy"><q>{{provider.info.contractLengthDisplay}}</q></div>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+@import "compass";
+@import "partials/variables";
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/layout";
+@import "partials/module";
+@import "partials/fonts";
+
+.slogan {
+  &.provider {
+    h2 {
+      background: $provider-slogan-bg-color;
+      @include opacity(0.7);
+    }
+  }
+  &.costs {
+    h2 {
+      background: $costs-slogan-bg-color;
+      @include opacity(0.7);
+    }
+  }
+  &.broadband {
+    h2 {
+      background: $broadband-slogan-bg-color;
+      @include opacity(0.7);
+    }
+  }
+  &.phone {
+    h2 {
+      background: $phone-slogan-bg-color;
+      @include opacity(0.7);
+    }
+  }
+}
+
+.info {
+  &.provider {
+    padding: 18% 15% 20% 15%;
+    color: invert($provider-slogan-bg-color);
+    background: tint($provider-slogan-bg-color, 20);
+    .left {
+      @include prefix(2);
+      @include span-columns(2, 12);
+    }
+    .right {
+      @include span-columns(8 omega, 12);
+    }
+  }
+  &.costs {
+    padding: 18% 15% 27% 15%;
+    background: tint($costs-slogan-bg-color, 20);
+    .left {
+      @include span-columns(8, 12);
+    }
+    .right {
+      @include span-columns(4 omega, 12);
+    }
+  }
+  &.broadband {
+    padding: 15%;
+    background: tint($broadband-slogan-bg-color, 20);
+    .left {
+      @include span-columns(6, 12);
+    }
+    .right {
+      @include span-columns(6 omega, 12);
+    }
+  }
+  &.phone {
+    padding: 17% 15% 12% 15%;
+    background: tint($phone-slogan-bg-color, 20);
+    .center {
+      margin: 0 auto;
+      h2, .copy {
+        text-align: center;
+      }
+    }
+  }
+}

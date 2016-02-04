@@ -1,0 +1,2 @@
+<%@ ServiceHost Language="C#" Debug="true" Service="BroadbandChoices.Bundles" CodeBehind="Bundles.svc.cs" %>$
+

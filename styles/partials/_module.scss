@@ -1,0 +1,70 @@
+.tilt {
+  @include transition(all 0.5s cubic-bezier(0, 1.8, 1, 1.8) 0.8s);
+  @include transform(rotateZ(2deg)); 
+}
+
+header {
+  position: relative;
+  z-index: 10;
+  nav {
+    text-align: center;
+    background: $nav-bg-color;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    a {
+      color: $nav-link-color;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 20px;
+      &:hover {
+        color: $nav-link-hover-color;
+      }
+    }
+  }
+}
+
+.slogan {
+  position: relative;
+  background: {
+    position: center center;
+    attachment: fixed;
+    size: cover;
+  }
+  text-align: center;
+  h2 {
+    color: $slogan-header-color;
+    font: {
+      weight: normal;
+      size: 48px;
+    }
+    position: absolute;
+    top: 1%;
+    left: -15%;
+    width: 120%;
+    padding: 3% 0;
+    margin: {
+      top: 20px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    text-shadow: 0 0 10px black;
+    @include border-radius;
+    @include box-shadow(2px 2px 5px #333);
+  }
+}
+
+.info {
+  color: $info-color;
+  background: black;
+  @include box-shadow(5px 5px 50px #333);
+  .copy {
+    font-size: 1.8em;
+    line-height: 1.5;
+    text-shadow: 0 0 10px black;
+  }
+  .options {
+    margin: 10px 0;
+  }
+}

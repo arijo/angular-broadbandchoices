@@ -1,0 +1,45 @@
+<div class="costs slogan" id="costs">
+  <h2 ng-class="costs.tilt" >How your costs are calculated</h2>
+</div>
+
+<div class="costs info" id="costs-info">
+  <div class="options">
+    <label>Include line rental of {{costs.info.costs.lineRentalDisplay}} into the cost calculations bellow</label>
+    <input type="checkbox" ng-model="costs.showWithoutLineRental" />
+  </div>
+
+  <div class="copy">
+    <div class="left initial-monthly"><strong>Monthly cost for first 12 months</strong></div>
+    <div class="right initial-monthly-cost">{{costs.info.costs.costBreakdown[0].value}}</div>
+  </div>
+
+  <div class="copy" ng-show="costs.info.costs.costBreakdown[1]">
+    <div class="left thereafter-monthly"><strong>Thereafter monthly cost</strong></div>
+    <div class="right thereafter-monthly-cost">{{costs.info.costs.costBreakdown[1].value}}</div>
+  </div>
+
+  <div class="copy" ng-show="costs.showWithoutLineRental">
+    <div class="left line-rental-monthly" >Line rental monthly cost</div>
+    <div class="right line-rental-monthly-cost">{{costs.info.costs.lineRentalDisplay}}</div>
+  </div>
+
+  <div class="copy">
+    <div class="left hardware-upfront">Hardware cost</div>
+    <div class="right hardware-upfront-cost">{{costs.info.costs.hardwareCostDisplay}}</div>
+  </div>
+
+  <div class="copy">
+    <div class="left intallation">Installation cost</div>
+    <div class="right installation-cost">{{costs.info.costs.installationCostDisplay}}</div>
+  </div>
+
+  <div class="copy">
+    <div class="left delivery">Installation cost</div>
+    <div class="right delivery-cost">{{costs.info.costs.deliveryCostDisplay}}</div>
+  </div>
+
+  <div class="copy">
+    <div class="left first-year"><strong>First year cost</strong></div>
+    <div class="right first-year-cost">{{costs.info.costs.firstYearCostDisplay}}</div>
+  </tr>
+</div>
