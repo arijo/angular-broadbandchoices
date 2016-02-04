@@ -7,7 +7,7 @@ consuming a .NET WCF web service running on the backend.
 
 mkdir app && cd app
 
-git clone http://github.com/arijo/angular-marketing-and-advertising.git .
+git clone https://github.com/arijo/angular-broadbandchoices.git .
 
 bower install
 
